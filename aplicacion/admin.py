@@ -15,8 +15,4 @@ class admMascota(admin.ModelAdmin):
     list_display=["id","nombre","tipo","propietario"]
     list_editable=["nombre","tipo","propietario"]
 
-    class meta:
-        model=Mascota
-
-
 admin.site.register(Mascota,admMascota)
